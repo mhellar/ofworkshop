@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Internet of Things: Week 1</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <figure>
+                    <h2 class="intro">Internet of Things: Week 1</h2 class="intro">
+                    <h2 class="intro">Internet of Things: Week 1</h2 class="intro">
+                    <h2 class="intro">Internet of Things: Week 1</h2 class="intro">
+                    <h2 class="intro">Internet of Things: Week 1</h2 class="intro">
+                    <h2 class="intro">Internet of Things: Week 1</h2 class="intro">
+
+                </figure>
+            </section>
+            <section data-background="img/evil-robot-glitch-remix.svg" data-background-transition="zoom">
+                <p>Slides are here: <a href="https://mhellar.github.io/aau_iot/week1">https://mhellar.github.io/aau_iot/week1</a></p>
+                <br>
+                <p>Grab the code here: <a href="http://bit.ly/2c5wYej">http://bit.ly/2c5wYej</a></p>
+            </section>
+            <section data-background="img/evil-robot-glitch-remix.svg" data-background-transition="zoom">
+                <p>Download Arduino: <a href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a></p>
+            </section>
+
+
+            <section>
+                <ul>
+                    <h3>Topics for This Week:</h3>
+                    <li class="fragment">What is a Microcontroller?</li>
+                    <li class="fragment">Introduction to Arduino</li>
+                    <li class="fragment">Building your first circuit</li>
+                    <li class="fragment">Writing a program to control digital output</li>
+                </ul>
+            </section>
+            <section>
+
+                <section>
+                    ￼
+                    <h3>WHAT IS A MICROCONTOLLER:</h3>
+                    <p>
+                        We know what a computer looks like. It usually has a keyboard, monitor, CPU (Central Processing Unit), printer, and a mouse.These types of computers, like the Mac or PC, are primarily designed to communicate (or “interface”) with humans.
+                    </p>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    ￼
+                    <p>
+                        A microcontroller is a self-contained system with peripherals, memory and a processor that can be used as an embedded system. Most programmable microcontrollers that are used today are embedded in other consumer products or machinery including phones,
+                        peripherals, automobiles and household appliances for computer systems.</p>
+                </section>
+                <section>
+                    ￼
+                    <p>
+                        We call these devices “microcontrollers”. Micro because they’re small, and controller because they “control” machines, gadgets, whatever. They’re cool because, you can build a machine or device, write programs to control it and then let it work for you
+                        automatically.
+                    </p>
+                </section>
+                <section>
+                    ￼
+                    <img src="img/furby.jpg" height="220" alt="">
+                    <img src="img/nest.jpg" height="220" alt="">
+                    <img src="img/po.jpg" height="220" alt="">
+                    <img src="img/linn.jpg" height="220" alt="">
+                </section>
+                <section>
+                    <h2>There are many diiferent kinds of microcontrollers</h2>
+                </section>
+                <section data-background="img/mc-grid.jpg" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/part.png" data-background-size="1200px" data-background-transition="zoom">
+                </section>
+                <section>
+                    ￼
+                    <img src="img/lbb.png" height="250" alt="">
+                    <img src="img/flora.jpg" height="250" alt="">
+                    <img src="img/trinket.jpg" height="250" alt="">
+                </section>
+                <section data-background="img/esp32.jpg" data-background-size="1200px" data-background-transition="zoom">
+                </section>
+                <section>
+                    <img src="img/ar_house.png" height="600">
+                </section>
+                <section>
+                    <a href=" https://blog.hackster.io/the-objectifier-trains-your-devices-to-respond-to-your-daily-routine-8c8a0e05da4">
+                        <p>The Objectifier</p>
+                    </a>
+                </section>
+
+            </section>
+            </section>
+            </section>
+            <section>
+                <section>
+                    ￼
+                    <h3>WHAT IS ARDUINO:</h3>
+                    <p>
+                        <ul>
+                            <li class="fragment">Arduino is an open source physical computing platform based on a simple input/output (I/O) board and a development environment that implements the Processing language.</li>
+                            <li class="fragment">Arduino can be used to develop standalone interactive objects or can be connected to software on your computer (such as Processing, NodeJS or Max/MSP etc..).</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <a href="https://www.arduino.cc/">
+                        <h1>www.arduino.cc</h1>
+                    </a>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Physical Computing</h3>
+                    <p> Physical computing, in the broadest sense, means building interactive physical systems by the use of software and hardware that can sense and respond to the analog world. </p>
+                    <br>
+                    <img src="img/headphone.jpg" height="400">
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section data-background="img/Daniel-Rozin-Penguin-Mirror-1.gif" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section>
+                    <p>In the past, using electronics meant having to deal with engineers, and building circuits one small component at a time.These issues kept creative people from experimenting with the medium directly. In recent years, micro- controllers
+                        have become cheaper and easier to use.</p>
+                </section>
+                <section>
+                    <p>The progress that has been made with Arduino has been to bring these tools one step closer to the non expert allowing people to start building things after only two or three days of a workshop.
+                        <br>
+                        <br> With Arduino, a designer or artist can get to know the basics of electronics and sensors very quickly and can start building prototypes with very little investment.</p>
+                </section>
+                <section>
+                    <h3>Some Examples</h3>
+                    <a href="http://www.jimcampbell.tv/portfolio/installations/shadow_for_heisenberg/">Shadow for Heisenberg</a>
+                    <br>
+                    <a href="https://learn.adafruit.com/bedazzler/overview">Bedazzler</a>
+                    <br>
+                    <a href="http://www.smoothware.com/danny/woodenmirrormov.html">Woden Mirror</a>
+                    <br>
+                    <a href="http://highlowtech.org/?p=2286">Hi Low Tech</a>
+                    <br>
+                    <a href="http://www.creativeapplications.net/openframeworks/irregular-polyhedron-study-1-vertex-edge-and-volume/">Irregular Polyhedron</a>
+                    <br>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>The Arduino is composed of two major parts:</h3>
+                    <ul>
+                        <li class="fragment">The Arduino board, which is the piece of hardware you program to control your projects.</li>
+                        <li class="fragment">The Arduino IDE, the piece of software you run on your computer.</li>
+                        <li class="fragment">You use the IDE to create a sketch(a program) that you upload to the Arduino board.The sketch tells the board what to do.</li>
+                    </ul>
+                    <br>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <h3>Key Terms</h3>
+                    <ul>
+                        <li class="fragment">“sketch” – a program you write to run on an Arduino board</li>
+                        <li class="fragment">“pin” – an input or output connected to something. e.g. output to an LED, input from a knob.</li>
+                        <li class="fragment">“digital” – value is either HIGH or LOW. (aka on/off, one/zero) e.g. switch state</li>
+                        <li class="fragment">“analog” – value ranges, usually from 0-255. e.g. LED brightness, motor speed, etc.</li>
+                </section>
+                <section>
+                    <h3>Tour of the hardware</h3>
+                    <img src="img/ardio.png">
+                    <p>These can either be inputs or outputs, which is defined in your code.</p>
+                </section>
+                <section>
+                    <img src="img/ardao.png">
+                    <p>These dedicated analogue input pins take analog values (i.e., voltage readings from a sensor) and convert them into a number between 0 and 1023 we’ll look at this Thursday</p>
+                </section>
+                <section>
+                    <img src="img/ardioout.png">
+                    <p>There are actually six of the digital pins that can be reprogrammed for analog output we’ll look at this next class</p>
+                </section>
+                <section>
+                    <img src="img/ardpow.png" height="400">
+                    <p>These power pins are capable or providing 5.5 volts or 3.3 volts of power. Also there are two pins that are capable of providing ground connectons to any components that you attach to the controller.</p>
+                </section>
+                <section>
+                    <img src="img/ardusb.png" height="400">
+                    <p>The USB connector connects the controller to you computer allowing you to program it. The USB connection also provides power.</p>
+                </section>
+                <section>
+                    <img src="img/ardfull.png">
+                </section>
+                <section>
+                    <img src="img/ardide.png" height="500">
+                    <h4>The IDE (Integrated Development Environment) is a program running on your computer that allows you to write sketches for the Arduino board in a simple language modeled after the Processing (www.processing.org) language..</h4>
+                </section>
+                <section>
+                    <h3>The programming cycle on Arduino is basically as follows:</h3>
+                    <ul>
+                        <li class="fragment">Plug your board into a USB port on your computer.</li>
+                        <li class="fragment">Write a sketch that will bring the board to life.</li>
+                        <li class="fragment">Upload this sketch to the board through the USB connection and wait a couple of seconds for the board to restart.</li>
+                        <li class="fragment">The board executes the sketch that you wrote</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Project 1<br> Basic Housekeeping</h3>
+                    <p>This first lesson won't really teach programming the Arduino. It’s meant to introduce you to building a basic electrical circuit.It will also get us prepped for building the rest of the exercises throughout the class.
+                        <p>
+                            <br>
+                            <a href="#" class="navigate-down">
+                            </a>
+                </section>
+                <section>
+                    <h3>Gather the parts</h3>
+                    <ul>
+                        <li>1 220 ohm resistor (bands are red,red,violet, gold)</li>
+                        <img src="img/220_ohm.png" height="200">
+                        <li>1 red Light Emitting Diode(LED)</li>
+                        <img src="img/redled.png" height="200">
+                    </ul>
+                </section>
+                <section>
+                    <h3>Gather the parts</h3>
+                    <ul>
+                        <li>1 long yellow wire</li>
+                        <li>1 long green wire</li>
+                        <li>1 short white wire</li>
+                        <img src="img/wires.png" height="300">
+                    </ul>
+                </section>
+                <section>
+                    <h3>Gather the parts</h3>
+                    <ul>
+                        <li>1 Breadboard</li>
+                        <img src="img/bb.png" height="200">
+                        <li>1 usb cable</li>
+                        <img src="img/usb.png" height="200">
+                    </ul>
+                </section>
+                <section>
+                    <h3>Gather the parts</h3>
+                    <ul>
+                        <li>1 Arduino Board</li>
+                        <img src="img/ard.png" height="400">
+                    </ul>
+                </section>
+                <section>
+                    <h3>The Breadboard</h3>
+                    <img src="img/bb1.png" height="400">
+                </section>
+                <section>
+                    <h3>The Circuit</h3>
+                    <img src="img/circuit1.png" height="600">
+                </section>
+                <section data-background="img/proj1_1.png" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/proj1_2.png" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/proj1_3.png" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/proj1_4.png" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section>
+                    <img src="img/electron-flow.gif" height="450">
+                </section>
+                <section>
+                    <p>An led is a directional component. -The long Lead is called the Anode is connected to the +5Volts -The short lead is called the Cathode and is connected to ground -As the electrical current passes through the LED produces light.</p>
+                    <img src="img/led_diag.png" height="450">
+                </section>
+                <section>
+                    <p>The 5 Volts from the Arduino is too much electricity for the LED and will burn it out.
+                        <br> We need to place a resistor in the circuit to lower the voltage</p>
+                    <img src="img/resistance.png" height="450">
+                </section>
+                <section>
+                    <p>More on calculating resistance here: <a href="https://learn.sparkfun.com/tutorials/voltage-current-resistance- and-ohms-law">
+LED Resistor calculator: <a href="http://led.linear1.org/1led.wiz"></a></p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <p>This next lesson get you up and running with the Arduino software and uploading a sketch to the Arduino board. Once you've completed this step we can continue to the really interesting stuff, which is when we start writing our own
+                        sketches!
+                    </p>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <h3>Blinking an Led</h3>
+                    <img src="img/ledblink.png" height="450">
+                </section>
+                <section>
+                    <h3>Blinking an Led</h3>
+                    <p>Parts are pretty much the same from the first excercise</p>
+                </section>
+                <section>
+                    <h3>Connect GND on the arduino to the ground strip on the breadboard</h3>
+                    <img src="img/led_step1.png" height="450">
+                </section>
+                <section>
+                    <h3>Make a connection between the ground strip and the short lead of the LED using the resistor.</h3>
+                    <img src="img/led_step2.png" height="450">
+                </section>
+                <section>
+                    <h3>Connect Pin 13 on the to the same row as the long lead of the LED on the breadboard</h3>
+                    <img src="img/led_step3.png" height="450">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">Upload 'LedBlink.ino'</h2>
+                </section>
+                <section>
+                    <p>From the tools menu -> Board->Arduino Uno</p>
+                    <img src="img/ai3.png" height="450">
+                </section>
+                <section>
+                    <p>From the tools menu -> Serial Port >tty.usbmodem####</p>
+                    <img src="img/ai2.png" height="450">
+                </section>
+                <section>
+                    <p>Hit the arrow to upload</p>
+                    <img src="img/ai1.png" height="450">
+                </section>
+                <section>
+                    <code>
+                <pre>
+int led = 13;
+
+// the setup routine runs once when you press reset:
+void setup() {                
+  // initialize the digital pin as an output.
+  pinMode(led, OUTPUT);     
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);               // wait for a second
+}
+</pre>
+            </code>
+                </section>
+                <section>
+                    <p>
+                        Arduino expects two functions to exists—one called
+                        <b>setup()</b> and one called <b>loop()</b>.
+                        <br>
+                        <br>
+                        <b>setup()</b> is where you put all the code that you want to execute once at the beginning of your program
+                        <br>
+                        <br>
+                        <b>loop()</b> contains the core of your program, which is executed over and over again. When you power up the board, the code runs; when you want to stop, you just turn it off.</p>
+                </section>
+                <section>
+                    <p>
+                        <b>// Example 01 : Blinking LED<br><br></b> A comment is a useful way for us to write little notes.The preceding title comment just reminds us that this program, Example 01, blinks an LED.</p>
+                </section>
+                <section>
+                    <p>
+                        <b>int LED = 13; // LED connected to // digital pin 13<br><br></b> We are defining a integer variable called LED as Arduino pin 13.</p>
+                </section>
+                <section>
+                    <p>
+                        <b>void setup()</b>
+                        <br>
+                        <br> This line tells Arduino that the next function will be called setup().</p>
+                </section>
+                <section>
+                    <p>
+                        <pre><b>void setup()<br>
+{
+pinMode(LED, OUTPUT); // sets the digital // pin as output
+}<br><br></b></pre> pinMode tells Arduino how to configure a certain pin. Digital pins can be used either as INPUT or OUTPUT. In this case, we need an output pin to control our LED, so we place the number of the pin and its mode
+                        inside the parentheses.
+                        <br>
+                        <br> pinMode is a function, and the words (or numbers) specified inside the parentheses are arguments. INPUT and OUTPUT are keywords in the Arduino language.</p>
+                </section>
+                <section>
+                    <p>
+                        <pre><b>void loop()<br>
+{
+// code here repeats over and over 
+}<br><br></b></pre> loop() is where you specify the main behavior of your interactive device. It will be repeated over and over again until you switch the board off.</p>
+                </section>
+                <section>
+                    <p>
+                        <b>digitalWrite(LED,HIGH); //turns the LED on<br><br></b> As the comment says, digitalWrite() is able to turn on (or off) any pin that has been configured as an OUTPUT.
+                        <br>
+                        <br> The first argument (in this case, LED) specifies which pin should be turned on or off (remember that LED is a constant value that refers to pin 13, so this is the pin that’s switched).
+                        <br>
+                        <br> The second argument can turn the pin on (HIGH) or off (LOW).</p>
+                </section>
+                <section>
+                    <p>
+                        Imagine that every output pin is a tiny power socket, like the ones you have on the walls of your apartment.American ones are 110V,and Arduino works at a more modest 5V.
+                        <br>
+                        <br> The magic here is when software becomes hardware.When you write digitalWrite(LED, HIGH), it turns the output pin to 5 V, and if you connect an LED, it will light up.
+                        <br>
+                        <br> So at this point in your code, an instruction in software makes something happen in the physical world by controlling the flow of electricity to the pin. We can translate this into something more visible with the LED as our
+                        actuator.
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <b>delay(1000); // wait for a second
+<br><br></b> Pause the program for 1000ms = 1 second, leaving the LED on
+                        <br>
+                        <br>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <b>digitalWrite(LED,LOW); //turns the LED off<br><br></b> As the comment says, digitalWrite() is able to turn on (or off) any pin that has been configured as an OUTPUT.
+                        <br>
+                        <br> Set the pin LOW(off)</p>
+                </section>
+                <section>
+                    <p>
+                        <b>delay(1000); // wait for a second
+<br><br></b> Pause the program for 1000ms = 1 second, leaving the LED off
+                        <br>
+                        <br>
+                    </p>
+                </section>
+                <section>
+                    <h3>Summary:</h3>
+                    <ul>
+                        <li>Turns pin 13 into an output (just once at the beginning), Enters a loop</li>
+                        <li>Switches on the LED connected to pin 13</li>
+                        <li>Waits for a second</li>
+                        <li>Switches off the LED connected to pin 13</li>
+                        <li>Waits for a second</li>
+                        <li>Goes back to beginning of the loop</li>
+                    </ul>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">Upload 'Blinking_Led_Random_Delay.ino'</h2>
+                </section>
+                <section>
+                    <code>
+                <pre>
+int led = 13;
+int randval;
+
+// the setup routine runs once when you press reset:
+void setup() {                
+  // initialize the digital pin as an output.
+  pinMode(led, OUTPUT);     
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  randval = random(1000);
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(randval);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  delay(randval);               // wait for a second
+}
+</pre>
+            </code>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">Upload 'Blinking_Led_wForLoop.ino'</h2>
+                </section>
+                <section>
+                    <code>
+                <pre>
+// Example 01 : Blinking LED
+//
+
+int LED = 13;   // LED connected to
+                // digital pin 13
+                
+void setup()
+{
+  pinMode(LED, OUTPUT);    // sets the digital                           // pin as output
+}
+
+void loop()
+{
+  for(int i = 1;i <=100; i++){
+  digitalWrite(LED, HIGH);   // turns the LED on
+  delay(i);               // waits for a second
+  digitalWrite(LED, LOW);    // turns the LED off
+  delay(i);               // waits for a second
+  }
+}
+</pre>
+            </code>
+                </section>
+            </section>
+            <section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Project 3: Knight Rider</h3>
+                    <iframe src="https://player.vimeo.com/video/6638472?" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <img src="img/chaser_bb_1.jpg" </section>
+                </section>
+                <section>
+                    <ul>
+                        <li>Parts for this project</li>
+                        <li>Solderless Breadboard</li>
+                        <li>9 x Flexible Wire Jumpers - 8 x LEDs(red)</li>
+                        <li>8 x 220 Ohm Resistors(red, red violet)</li>
+                        <li>Arduino Duo board</li>
+                        <li>USB Cable</li>
+                    </ul>
+                </section>
+                <section data-background="img/knightSteps/knightSteps.001.jpg" data-background-size="1000px">
+                </section>
+                <section data-background="img/knightSteps/knightSteps.002.jpg" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/knightSteps/knightSteps.003.jpg" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/knightSteps/knightSteps.004.jpg" data-background-size="1000px" data-background-transition="zoom">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">Upload 'KnightRider1.ino'</h2>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">Upload 'KnightRiderForLoop.ino'</h2>
+                </section>
+                <section>
+                    <a href="http://playground.arduino.cc/uploads/Main/arduino_comic_v0004.pdf">Homework!</a>
+                </section>
+                <section>
+                    <pHomework: make an account on hackster.io and go to the target open house. Write 3 paragraphs about a device you would like to make>
+                        </p>
+                </section>
+
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
+        });
+    </script>
+</body>
+
+</html>
