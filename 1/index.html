@@ -42,6 +42,9 @@
                 <p>Slides are here: <a href="https://mhellar.github.io/ofworkshop/1">https://mhellar.github.io/ofworkshop/1</a></p>
                 <br>
                 <p>Grab the code here: <a href="http://bit.ly/2c5wYej">http://bit.ly/2c5wYej</a></p>
+                <br>
+                <p>Unzip the code and place it inside the apps folder of your openFrameworks folder</a>
+                </p>
             </section>
 
             <section>
@@ -56,7 +59,6 @@
                     <li class="fragment">Programming: Variables, Functions, Vectors and Classes</li>
                     <li class="fragment">GUI</li>
                     <li class="fragment">Working with Images and Videos</li>
-                    <li class="fragment">Sound basics</li>
                 </ul>
             </section>
 
@@ -188,7 +190,7 @@
                 </ul>
             </section>
             <section>
-                <p>Running you first example(OSX)</p>
+                <p>Running your first example(OSX)</p>
             </section>
             <section>
                 <p>On OSX go to oFroot/examples/3d/3DPrimitivesExample and double click 3DPrimitivesExample.xcodeproj</p>
@@ -197,11 +199,177 @@
             <section>
                 <p>1. Set the dropdown to 3DPrimitivesExample Debug 64-bit 2. Hit the play button</p>
                 <img src="img/osx2.png" height="600">
+                <p>(it will likely compile all of oF the first time, future builds will be much shorter)</p>
             </section>
             <section>
                 <p>Final Result</p>
                 <img src="img/osx2.png" height="600">
             </section>
+            <section>
+                <p>Running youe first example(Win)</p>
+            </section>
+            <section>
+                <p>On Windows go to oFroot/examples/3d/3DPrimitivesExample and double click 3DPrimitivesExample.xcodeproj</p>
+                <img src="img/win1.png" height="600">
+            </section>
+            <section>
+                <p>1. Set the dropdowns to Debug 64-bit & x64. 2. Hit the play button 3.Click yes</p>
+                <img src="img/win2.png" height="600">
+                <p>(it will likely compile all of oF the first time, future builds will be much shorter)</p>
+            </section>
+            <section>
+                <p>Final Result</p>
+                <img src="img/3dwin.png" height="600">
+            </section>
+            <section>
+                <p>Note there are two build configurations, "Debug" and "Release".</p>
+
+                <p>Debug is useful when developing your project, as it will provide the most information about where and why something crashed.</p>
+
+                <p>Release is useful when you're done developing your project. Release will create a smaller, faster app -- but it won't give you much information if it crashes.</p>
+            </section>
+            <section>
+                <p>You will find a standalone executable in the 3DPrimitivesExample/bin folder</p>
+                <img src="img/3dbin.png" height="50">
+                <p>Great! everyone is up and running</p>
+            </section>
+            <section>
+                <p>Now, Lets have a look at some of the important folders in the oF folder:</p>
+                <ul>
+                    <li class="fragment">Examples</li>
+                    <li class="fragment">Apps</li>
+                    <li class="fragment">Addons</li>
+                </ul>
+            </section>
+            <section>
+                <p>Examples</p>
+                <ul>
+                    <li class="fragment">3D: Examples for 3D graphics and 3D math</li>
+                    <li class="fragment">addons: Examples of various addons, extensions of oF core API i.e. Kinect, OpenCV, OSC</li>
+                    <li class="fragment">communication: Examples for communication with hardware vi Serial port. i.e. talk to an Arduino</li>
+                    <li class="fragment">empty: contains emptyExample. Copy this and use as a starting template</li>
+                    <li class="fragment">events: Examples for dealing with events such as keypress, custom events and timers</li>
+                    <li class="fragment">GL: Advanced Examples for 2D and 3D graphics, FBOs, Shaders etc..</li>
+                </ul>
+            </section>
+            <section>
+                <p>Examples(Cont)</p>
+                <ul>
+                    <li class="fragment">graphics: Examples of 2d graphics</li>
+                    <li class="fragment">gui: Examples using the built in GUI</li>
+                    <li class="fragment">math: math examples including a simple particle system, vector math and noise</li>
+                    <li class="fragment">sounds: Examples for playing, recording and basic generation of sounds</li>
+                    <li class="fragment">util: Examples useful topic such as working with directories, saving and loading files, threads etc.. </li>
+                    <li class="fragment">video: Examples for playing, recording and processing video. Also how to use the webcam</li>
+                </ul>
+            </section>
+            <section>
+                <p>Apps</p>
+                <ul>
+                    <li class="fragment">This is where all of your apps will live</li>
+                    <li class="fragment">You must place your programs in a subfolder of apps</li>
+                    <li class="fragment">right now there a is a subfolder called myApps, we can put new projects in there</li>
+                    <li class="fragment">you can make your own folders here to organize your programs i.e. 2018drawings</li>
+                    <li class="fragment">if you do not place you program in a subfolder of apps it will not compile</li>
+                    <li class="fragment">we will make a new app in the next excercise</li>
+                </ul>
+            </section>
+            <section>
+                <p>Addons</p>
+                <ul>
+                    <li class="fragment">This is where the addons live</li>
+                    <li class="fragment">Addons extends the core API of oF</li>
+                    <li class="fragment">an example might be and addon for using the Kinect or using the Twitter API</li>
+                    <li class="fragment">We will look at addons in depth on Thurs</li>
+                </ul>
+            </section>
+            <section>
+                <p>Docs</p>
+                <ul>
+                    <li class="fragment">Docs</li>
+                    <li class="fragment">This contains some documentation the the markdown format</li>
+                    <li class="fragment">It's mainly platform specific, i.e. IOS, Android</li>
+                    <li class="fragment">For the core API documentation look here: <a href="http://openframeworks.cc/documentation">http://openframeworks.cc/documentation</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>File structure of a Project</p>
+                <p>Lets look at the file strucure of oFworkshop/emptyExample</p>
+                <p>This is a bare minimum project</p>
+                <img src="img/filestructure.png" height="400">
+            </section>
+            <section>
+                <p>The bin folder is where our executable or binary file will live once we compile the program</p>
+                <img src="img/filestructure.png" height="400">
+            </section>
+            <section>
+                <p>The bin/data folder is where we can include assets for our program such as fonts, images, sounds, movies etc...</p>
+                <img src="img/filestructure.png" height="400">
+            </section>
+            <section>
+                <p>The src folder is where our code lives</p>
+                <p>At minimum there should be main.cpp , ofApp.cpp and ofApp.h</p>
+                <p>we will walk through each of these files in just a bit</p>
+                <img src="img/filestructure.png" height="400">
+            </section>
+            <section>
+                <p>The Project Generator</p>
+                <ul>
+                    <li class="fragment">In addition to the files oF needs we need a few more files specific to our compiler platform</li>
+                    <li class="fragment">Xcode calls them projects</li>
+                    <li class="fragment">Visual Studio calls them solutions</li>
+                    <li class="fragment">oF comes with a tool called the project generator that helps with that</li>
+                    <li class="fragment">It's easy, lets use it!</li>
+                </ul>
+            </section>
+            <section>
+                <p>The Project Generator(OSX)</p>
+                <p>In the oF folder double click projectGenerator-osx/projectGenerator</p>
+                <img src="img/projOsx.png" height="400">
+            </section>
+            <section>
+                <p>The Project Generator(OSX)</p>
+                <p>The first time you run it, it will ask for the oF path</p>
+                <p>for example mine is: /Users/markhellar/Documents/of_v0.9.8_osx</p>
+            </section>
+            <section>
+                <p>Once it's setup, hit import</p>
+                <p>import the emptyExample folder from apps/oFworkshop</p>
+                <img src="img/projosx1.png" height="400">
+            </section>
+            <section>
+                <p>Now hit update</p>
+                <p>and them open in IDE</p>
+                <img src="img/projosx2.png" height="400">
+            </section>
+            <section>
+                <p>This will open thje project in Xcode</p>
+                <img src="img/projosx3.png" height="600">
+            </section>
+            <section>
+                <p>The Project Generator(Win)</p>
+                <p>In the oF folder double click projectGenerator-vs/projectGenerator</p>
+                <img src="img/winproj1.png">
+            </section>
+            <section>
+                <p>Once it's setup, hit import</p>
+                <p>import the emptyExample folder from apps/oFworkshop</p>
+                <img src="img/projosx1.png" height="400">
+            </section>
+            <section>
+                <p>Now hit update</p>
+                <p>and then open in IDE</p>
+                <img src="img/projosx2.png" height="400">
+            </section>
+            <section>
+                <p>This will open thje project in Xcode</p>
+                <img src="img/projosx3.png" height="400">
+            </section>
+
+
+
+
+
 
 
         </div>
