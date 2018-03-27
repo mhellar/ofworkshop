@@ -39,14 +39,10 @@
                 </figure>
             </section>
             <section data-background="img/evil-robot-glitch-remix.svg" data-background-transition="zoom">
-                <p>Slides are here: <a href="https://mhellar.github.io/aau_iot/week1">https://mhellar.github.io/aau_iot/week1</a></p>
+                <p>Slides are here: <a href="https://mhellar.github.io/ofworkshop/1">https://mhellar.github.io/ofworkshop/1</a></p>
                 <br>
                 <p>Grab the code here: <a href="http://bit.ly/2c5wYej">http://bit.ly/2c5wYej</a></p>
             </section>
-            <section data-background="img/evil-robot-glitch-remix.svg" data-background-transition="zoom">
-                <p>Download Arduino: <a href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a></p>
-            </section>
-
 
             <section>
                 <ul>
@@ -57,16 +53,161 @@
                     <li class="fragment">File and Code structure of a project</li>
                     <li class="fragment">Drawing in 2D</li>
                     <li class="fragment">Rendering text</li>
+                    <li class="fragment">Programming: Variables, Functions, Vectors and Classes</li>
+                    <li class="fragment">GUI</li>
                     <li class="fragment">Working with Images and Videos</li>
-                    <li class="fragment">Using a GUI</li>
-                    <li class="fragment">Working with sounds</li>
+                    <li class="fragment">Sound basics</li>
                 </ul>
             </section>
-            <section></section>
+
+            <section>
+                <p>openFrameworks is an open source C++ toolkit used for creative coding. It was created by Zach Lieberman in 2005. Today oF is one of the primary creative coding platforms. It is actively maintained by Zach Leiberman, Theodore Watson, Arturo
+                    Castro and the openFrameworks community</p>
+            </section>
+            <section>
+                <p>openFrameworks is indebted to to some significant precursors, mainly the Processing programming environment. Lets have a brief history lesson. </p>
+            </section>
+            <section>
+                <h3>Design by Numbers 1999</h3>
+                <img src="img/21.jpg" height="400">
+                <br>
+                <div><img src="img/maeda.jpg" height="80">
+                    <h4>John Maeda</h4>
+                </div>
+                <br>
+            </section>
+            <section>
+                <h3>Processing 2001 - Present</h3>
+                <img src="img/24-1.jpg" height="500"><img src="img/24-2.jpg" height="500">
+                <h3>Casey Reas and Ben Fry</h3>
+                <a href="#" class="navigate-down">
+                </a>
+            </section>
+            <section>
+                <h3>Casey Reas, <i>Articulate</i>(2003)
+                    <img src="img/articulate.jpg" height="400">
+            </section>
+            <section>
+                <h3>Arduino 2005 - Present</h3>
+                <img src="img/ard_ide.jpg" height="400">
+                <img src="img/ard.jpg" height="400">
+            </section>
+            <section>
+                <h3>Markus Kayser: <i>Solar-sintered Bowl.</i> 2011</h3>
+                <img src="img/ss3.jpg" height="250">
+                <img src="img/ss1.png" height="250">
+                <br>
+                <img src="img/ss2.jpg" height="250">
+            </section>
+            <section>
+                <blockquote cite="http://example.com/facts">
+                    “The two most important introductions for art in the past 20 years have been the Arduino and Processing,”
+                    <br>
+                    <br> - Paola Antonelli, senior curator in the Department of Architecture and Design at the Museum of Modern Art.
+                </blockquote>
+            </section>
+            <section>
+                <h3>Open Frameworks 2005 - Present</h3>
+                <img src="img/30.jpg" height="500">
+                <h3>Zachary Lieberman</h3>
+                <a href="#" class="navigate-down">
+                </a>
+            </section>
+            <section>
+                <h3>Rafael Lozano-Hemmer - <i>Level of Confidence</i>(2015)</h3>
+                <img src="img/31.jpg" height="600">
+            </section>
+            <section>
+                <h3>p5.js</h3>
+                <img src="img/p5.png" height="335">
+                <img src="img/p5convert.png" height="400">
+                <h3>Lauren McCarthy</h3>
+            </section>
+            <section>
+                <h3>Cinder</h3>
+                <img src="img/cinder.png" height="335">
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/89540870?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br>
+                <a href="https://cloudsdocumentary.com/">Clouds Documentary</a>
+            </section>
+            <section>
+                <p>Openframeworks compiles for the following platforms:</p>
+                <ul>
+                    <li class="fragment">OSX(Darwin)</li>
+                    <li class="fragment">Windows</li>
+                    <li class="fragment">Linux</li>
+                    <li class="fragment">IOS</li>
+                    <li class="fragment">Android</li>
+                    <li class="fragment">Linux on ARM(i.e. Raspberry Pi)</li>
+                </ul>
+            </section>
+            <section>
+                <p>Use Cases(suggested)</p>
+                <ul>
+                    <li>oF's core libraries deal with Multimedia, 2D and 3D graphics, images, video and sound. oF is good for developing new media projects for onsite installations and also rich multimedia desktop or mobile apps</li>
+                    <li>It works with the C++ language which is compiled to native machine code for the target platform, whch results in very performant fast applications that maximize the latest harware.</li>
+                    <li>It is not Web first (it is possible to transpile to asm.js <a href="http://openframeworks.cc/setup/emscripten/">Emscripten</a> but this is very new and not eveything works)</li>
+                    <li>Great for interaction prototyping!</li>
+                </ul>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/26679114?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/26679114">&quot;Please Empty Your Pockets&quot; (2010) by Rafael Lozano-Hemmer</a> from <a href="https://vimeo.com/bitforms">bitforms gallery</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/104614058" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/61730595?color=ffbd24&title=0&byline=0&portrait=0" width="640" height="853" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/56270798" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+            <section>
+                <img src="img/draw.png">
+            </section>
+            <section>
+                Scenarios where you might use other platforms
+            </section>
+            <section>
+                <img src="img/theyrule.png" height="600">
+            </section>
+            <section>
+                <img src=" img/haacke.png " height="600">
+            </section>
+            <section>
+                <img src="img/mdgui.jpg">
+            </section>
+            <section>
+                <p>Getting Set Up:</p>
+                <ul>
+                    <li class="fragment">You should have Xcode or Visual Studio 2015 installed</li>
+                    <li class="fragment">Also, you should have downloaded oF for your system</li>
+                    <li class="fragment">I like to keep the oF folder in Documents</li>
+                </ul>
+            </section>
+            <section>
+                <p>Running you first example(OSX)</p>
+            </section>
+            <section>
+                <p>On OSX go to oFroot/examples/3d/3DPrimitivesExample and double click 3DPrimitivesExample.xcodeproj</p>
+                <img src="img/osx1.png" height="600">
+            </section>
+            <section>
+                <p>1. Set the dropdown to 3DPrimitivesExample Debug 64-bit 2. Hit the play button</p>
+                <img src="img/osx2.png" height="600">
+            </section>
+            <section>
+                <p>Final Result</p>
+                <img src="img/osx2.png" height="600">
+            </section>
+
+
         </div>
     </div>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js "></script>
+    <script src="js/reveal.js "></script>
     <script>
         // Full list of configuration options available at:
         // https://github.com/hakimel/reveal.js#configuration
