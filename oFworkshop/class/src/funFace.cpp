@@ -5,14 +5,18 @@
 //  Created by mark hellar on 3/25/18.
 //
 
+//include header file here
 #include "funFace.h"
 
+//setup function for class
 void funFace::setup(){
     ofSetCircleResolution(100);
 }
 
+//draw function for class
 //you can define arguments to pass to a function here int x and y also declare in the header file for your class
 void funFace::draw(int x, int y){
+    
     color = ofColor( ofRandom(0, 255),
                     ofRandom(0, 255),
                     ofRandom(0, 255)

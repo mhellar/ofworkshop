@@ -2,8 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    video.load("gesture.mp4");
+    //reference http://openframeworks.cc/documentation/video/ofVideoPlayer/
     
+    video.load("gesture.mp4");
+    video.setVolume(100);
     video.setSpeed(0.3);
     
 }

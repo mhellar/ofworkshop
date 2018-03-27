@@ -2,7 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    myFont.load("Iron.ttf", 60);
+    //Do stuff with font here ofTrueTypeFont http://openframeworks.cc/documentation/graphics/ofTrueTypeFont/#show_setLetterSpacing
+    myFont.load("Iron.ttf", 60); //first argument is font to load located in bin/data second is font size
+    //myFont.setLetterSpacing(4);
+    
 }
 
 //--------------------------------------------------------------

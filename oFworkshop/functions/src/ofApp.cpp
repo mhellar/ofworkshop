@@ -2,7 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+//using ofLog to write data to the console http://openframeworks.cc/documentation/utils/ofLog/
+
 ofLog(OF_LOG_NOTICE, "the number is " + ofToString(sum(5,12)));
+    
 }
 
 //--------------------------------------------------------------
@@ -27,17 +30,17 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::twoCircles(){
-    ofCircle(40, 20, 20);
-    ofCircle(80, 90, 40);
+    ofDrawCircle(40, 20, 20);
+    ofDrawCircle(80, 90, 40);
 }
 
 //--------------------------------------------------------------
 void ofApp::killerFunctionArg(int x, int y, int r){
     ofPushStyle();
     ofSetColor(255,0,0);
-    ofCircle(x, y, r + 5);
+    ofDrawCircle(x, y, r + 5);
     ofSetColor(255,128,0);
-    ofCircle(x, y, r);
+    ofDrawCircle(x, y, r);
     ofPopStyle();
 }
 

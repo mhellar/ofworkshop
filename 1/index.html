@@ -63,8 +63,7 @@
                     <li class="fragment">File and Code structure of a project</li>
                     <li class="fragment">Drawing in 2D</li>
                     <li class="fragment">Rendering text</li>
-                    <li class="fragment">Programming: Variables, Functions, Vectors and Classes</li>
-                    <li class="fragment">GUI</li>
+                    <li class="fragment">Programming: Variables, Functions, Classes and Vectors</li>
                     <li class="fragment">Working with Images and Videos</li>
                 </ul>
             </section>
@@ -346,7 +345,7 @@
                 <img src="img/projosx2.png" height="400">
             </section>
             <section>
-                <p>This will open thje project in Xcode</p>
+                <p>This will open the project in Xcode</p>
                 <img src="img/projosx3.png" height="600">
             </section>
             <section>
@@ -357,22 +356,217 @@
             <section>
                 <p>Once it's setup, hit import</p>
                 <p>import the emptyExample folder from apps/oFworkshop</p>
-                <img src="img/projosx1.png" height="400">
+                <img src="img/projwin2.png" height="400">
             </section>
             <section>
                 <p>Now hit update</p>
                 <p>and then open in IDE</p>
-                <img src="img/projosx2.png" height="400">
+                <img src="img/projwin3.png" height="400">
             </section>
             <section>
-                <p>This will open thje project in Xcode</p>
-                <img src="img/projosx3.png" height="600">
+                <p>This will open thje project in Visual Studio</p>
+                <img src="img/projwin4.png" height="600">
+            </section>
+            <section>
+                <p>Main.cpp</p>
+                <img src="img/main.png" height="700">
+            </section>
+            <section>
+                <p>main.cpp</p>
+                <ul>
+                    <li class="fragment">In C++ each project must have a .cpp file with a main() function defined</li>
+                    <li class="fragment">There's not too much to change here, except:</li>
+                    <li class="fragment">ofSetupOpenGL(1024,768, OF_WINDOW);</li>
+                    <li class="fragment">We can change OF_WINDOW to OF_FULLSCREEN to fullscreen the application</li>
+                    <li class="fragment">We can change the size by altering 1024,768</li>
+                </ul>
+            </section>
+            <section>
+                <p>ofApp.h</p>
+                <img src="img/ofApph.png" height="700">
+            </section>
+            <section>
+                <p>ofApp.h</p>
+                <ul>
+                    <li>In the header file we define the structure of our program</li>
+                    <li class="fragment">#pragma once is a compiler directive, include this in all header files</li>
+                    <li class="fragment">#include "ofMain.h" imports all of the core classes from oF</li>
+                    <li class="fragment">once oF is imported we have ofBaseApp available</li>
+                    <li class="fragment">We are defining something called a class named ofApp for our program based on ofBaseApp</li>
+                    <li class="fragment">This is called inheritance</li>
+                    <li class="fragment">Inside our new ofApp class we have also inherited some functions..</li>
+                </ul>
+            </section>
+            <section>
+                <p>ofApp.h(cont)</p>
+                <ul>
+                    <li class="fragment">The most important functions are setup(), update() and draw()</li>
+                    <li class="fragment">These functions are the bare minimun required</li>
+                    <li class="fragment">Some other functions such as mouseMoved(int x, int y) are provided, which we may not use</li>
+                    <li class="fragment">In the header file we simply declare the name of classes function and variables for our program</li>
+                    <li class="fragment">We write the code for these in ofApp.cpp</li>
+                </ul>
+            </section>
+            <section>
+                <p>ofApp.cpp</p>
+                <img src="img/ofApp.png" height="700">
+            </section>
+            <section>
+                <p>ofApp.cpp</p>
+                <ul>
+                    <li class="fragment">The ofApp.cpp file contains the definitions of all functions declared in ofApp.h</li>
+                    <li class="fragment">Lets go through the primary functions</li>
+                    <li class="fragment">setup() is called first and runs only once</li>
+                    <li class="fragment">update() is called every frame before draw() </li>
+                    <li class="fragment">draw() is called every frame all drawing functions should be called here</li>
+                    <li class="fragment">by default the program runs at 60FPS</li>
+                </ul>
+            </section>
+            <section>
+                <img src="img/loop.png" height="700">
+            </section>
+            <section>
+                <p>setup()</p>
+                <ul>
+                    <li class="fragment">Some examples of things we may put here:</li>
+                    <li class="fragment">ofSetFrameRate(30); //reduce the framerate to 30FPS</li>
+                    <li class="fragment">ofSetFullscreen(1); //set fullscreen to true</li>
+                    <li class="fragment">Things you only need to do once</li>
+                </ul>
+            </section>
+
+            <section>
+                <p>update()</p>
+                <ul>
+                    <li class="fragment">Some examples of things we may put here:</li>
+                    <li class="fragment">Update a variable before redering it to the screen in draw()</li>
+                    <li class="fragment">read data from the network</li>
+                    <li class="fragment">Things you need to happen before drawing the results to the screen</li>
+                </ul>
             </section>
 
 
+            <section>
+                <p>draw()</p>
+                <ul>
+                    <li class="fragment">Some examples of things we may put here:</li>
+                    <li class="fragment">ofDrawCircle(200,400,80); // draw a shape</li>
+                    <li class="fragment">ofDrawBitmapString("hello", 300, 300); //draw some text</li>
+                </ul>
+            </section>
 
-
-
+            <section>
+                <p>ofApp.h and ofApp.cpp compared</p>
+                <img src="img/recipe1.png" height="700">
+            </section>
+            <section>
+                <p>ofApp.h and ofApp.cpp compared</p>
+                <img src="img/recipe2.png" height="700">
+            </section>
+            <section>
+                <p>ofApp.h and ofApp.cpp compared</p>
+                <img src="img/recipe3.png" height="700">
+            </section>
+            <section>
+                <img src="img/hello1.png" height="400">
+                <li>Add the following lines inside draw() in ofApp.cpp then compile</li>
+                <li>ofSetColor(255, 0, 0); //set color of the next thing we draw</li>
+                <li>ofDrawBitmapString("hello world", 300, 300); //draw text</li>
+            </section>
+            <section>
+                <p>ofApp.h and ofApp.cpp compared</p>
+                <img src="img/recipe1.png" height="700">
+            </section>
+            <section>
+                <p>Open basicshapes</p>
+                <p>and lets walk through the code</p>
+            </section>
+            <section>
+                <p>Open basicshapes2</p>
+                <p>and lets walk through the code</p>
+            </section>
+            <section>
+                <p>Open text</p>
+                <p>and lets walk through the code</p>
+            </section>
+            <section>
+                <p>Open loadFont</p>
+                <p>and lets walk through the code</p>
+                <p>font file is located in bin/data</p>
+            </section>
+            <section>
+                <p>Excercise 1</p>
+                <ul>
+                    <li>open mouseXY</li>
+                    <li class="fragment">Pair up</li>
+                    <li class="fragment">Use this as a helper template</li>
+                    <li class="fragment">Draw a picture using elements from the last 4 examples</li>
+                    <li class="fragment">Hit space to take a screenshot</li>
+                </ul>
+            </section>
+            <section>
+                <p>Open variables1</p>
+            </section>
+            <section>
+                <p>Open variables2</p>
+            </section>
+            <section>
+                <p>Open paintbrush</p>
+            </section>
+            <section>
+                <p>Open rotation</p>
+            </section>
+            <section>
+                <p>Open loops</p>
+            </section>
+            <section>
+                <p>Open Functions</p>
+            </section>
+            <section>
+                <p>Classes</p>
+                <ul>
+                    <li class="fragment">A recurring analogy is to see a "class" as a cookie cutter that can create many cookies, the "objects"</li>
+                    <li class="fragment">Some terms:</li>
+                    <li class="fragment">A class defines the characteristics of a thing - the object - and its behaviours; it defines not only its properties and methods</li>
+                    <li class="fragment">An object is an instance of a class.</li>
+                    <li class="fragment">The methods are the objects abilities.</li>
+                </ul>
+            </section>
+            <section>
+                <p>Open Class</p>
+            </section>
+            <section>
+                <p>Open ClassVector</p>
+            </section>
+            <section>
+                <p>Open ClassVectorProperties</p>
+            </section>
+            <section>
+                <p>Excercise 2</p>
+                <ul>
+                    <li>open yourClass</li>
+                    <li class="fragment">Pair up</li>
+                    <li class="fragment">Use this as a helper template</li>
+                    <li class="fragment">Modify the class using elements from the previous examples</li>
+                </ul>
+            </section>
+            <section>
+                <p>Images</p>
+                <p>open ImageLoading</p>
+            </section>
+            <section>
+                <p>open imageSpiral</p>
+            </section>
+            <section>
+                <p>Video</p>
+                <p>open video</p>
+            </section>
+            <section>
+                <p>open dataFromVideo</p>
+            </section>
+            <section>
+                <p>open Camera</p>
+            </section>
 
 
         </div>

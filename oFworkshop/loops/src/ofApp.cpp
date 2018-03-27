@@ -17,6 +17,7 @@ void ofApp::draw(){
     // Loop 1 - blue
     ofFill();
     ofSetColor(24, 58, 117);
+    
     for(int i=0; i<32; i++)
     {
         ofDrawCircle(20+i*20, 10, 10);

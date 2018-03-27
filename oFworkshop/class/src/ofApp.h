@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+//Including the header file for my custom class here
 #include "funFace.h"
 
 
@@ -22,5 +23,6 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    //declaring an object called face from my funFace custom class
     funFace face;
 };

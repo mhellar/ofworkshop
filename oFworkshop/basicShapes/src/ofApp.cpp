@@ -37,7 +37,7 @@ ofDrawCircle(200,400,80);
 ofSetColor(255,0,0);
 ofDrawEllipse(350,400,50,80);
 
-//Rectange with no fill
+//Rectangle with no fill
 ofSetColor(255,128,0);
 //NoFill draws only an outline
 ofNoFill();
@@ -58,6 +58,8 @@ ofDrawLine(700, 50, 700, 150); // Line from (700, 50) to (700, 150)
 ofSetColor(0,255,128);
 ofSetLineWidth(20); // A higher value will render thicker lines
 ofDrawLine(20, 500, 120, 500); // Line from (700, 50) to (700, 150)
+    
+//Graphics reference http://openframeworks.cc/documentation/graphics/ofGraphics
 }
 
 //--------------------------------------------------------------

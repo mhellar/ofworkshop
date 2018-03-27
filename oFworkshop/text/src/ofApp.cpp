@@ -12,8 +12,10 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofSetColor(120, 255, 100);
+    ofSetColor(255, 0, 0);
+    // http://openframeworks.cc/documentation/graphics/ofGraphics/#!show_ofDrawBitmapString
     ofDrawBitmapString("hello, you nice person", 300, 300);
+    
 }
 
 //--------------------------------------------------------------

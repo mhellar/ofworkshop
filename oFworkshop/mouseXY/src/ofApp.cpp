@@ -20,7 +20,12 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    //take a screenshot when space is pressed whis willbe located in bin/data
+    if(key == ' '){
+        ofImage screenShot;
+        screenShot.grabScreen(0, 0, ofGetWidth(), ofGetHeight());
+        screenShot.saveImage("screenShot.png");
+    }
 }
 
 //--------------------------------------------------------------

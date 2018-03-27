@@ -18,6 +18,7 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+    //declare an object of ofTrueTypeFont here http://openframeworks.cc/documentation/graphics/ofTrueTypeFont/
     ofTrueTypeFont myFont;
 };
