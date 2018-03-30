@@ -49,21 +49,185 @@
 
             <section>
                 <h3>Topics for Today</h3>
-                <li class="fragment">Warm Up</li>
-                <li class="fragment">Sound basics</li>
+                <li class="fragment">Vectors</li>
+                <li class="fragment">Classes</li>
+                <li class="fragment">Images</li>
+                <li class="fragment">Video</li>
+                <li class="fragment">Sound</li>
                 <li class="fragment">GUI</li>
                 <li class="fragment">Drawing in 3D</li>
-                <li class="fragment">Using Shaders</li>
-                <li class="fragment">Using OSC</li>
                 <li class="fragment">Using addons</li>
-                <li class="fragment">Quick look at OpenCV</li>
-                <li class="fragment">Project: Write a projection mapping program with shaders</li>
+                <li class="fragment">Using OSC</li>
+                <li class="fragment">Using Shaders</li>
                 <li class="fragment">Where to go next</li>
             </section>
-            <section></section>
+            <section>
+                <p>Vectors</p>
+                <ul>
+                    <li class="fragment">A vector is the equivalent in c++ to a c array. </li>
+                    <li class="fragment">It allows the storage of multiple elements (numbers, strings, objects etc.) in a format that can grow or shrink dynamically.</li>
+                    <li class="fragment">Once a vector is created, new elements can be added, others erased and the entire vector can be sorted or shuffled. </li>
+                </ul>
+            </section>
+            <section>
+                <p>Open vectors</p>
+            </section>
+            <section>
+                <p>Classes</p>
+                <ul>
+                    <li class="fragment">A recurring analogy is to see a "class" as a cookie cutter that can create many cookies, the "objects"</li>
+                    <li class="fragment">Every class has two files: a header file, also known as a declarations file with the termination '.h' and an implementation file, terminating in '.cpp'.</li>
+                    <li class="fragment">Some terms:</li>
+                    <li class="fragment">A class defines the characteristics of a thing - the object - and its behaviours; it defines not only its properties and methods</li>
+                    <li class="fragment">An object is an instance of a class.</li>
+                    <li class="fragment">The methods are the objects abilities i.e. draw</li>
+                    <li class="fragment">The propeperties are the object attributes i.e. size or color</li>
+                </ul>
+            </section>
+            <section>
+                <p>Open Class</p>
+            </section>
+            <section>
+                <p>Open ClassVector</p>
+            </section>
+            <section>
+                <p>Open ClassVectorProperties</p>
+            </section>
+
+            <section>
+                <p>Excercise 2</p>
+                <ul>
+                    <li>open yourClass</li>
+                    <li class="fragment">Pair up</li>
+                    <li class="fragment">Use this as a helper template</li>
+                    <li class="fragment">Modify the class using elements from the previous examples</li>
+                </ul>
+            </section>
+            <section>
+                <p>Further Reading</p>
+                <ul>
+                    <li class="fragment"><a href="http://openframeworks.cc/ofBook/chapters/OOPs!.html">Classes</a></li>
+                    <li class="fragment"><a href="http://openframeworks.cc/ofBook/chapters/stl_vector.html">Vectors</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>Images</p>
+                <p>open ImageLoading</p>
+            </section>
+            <section>
+                <p>open imageSpiral</p>
+            </section>
+            <section>
+                <p>Video</p>
+                <p>open video</p>
+            </section>
+            <section>
+                <p>open dataFromVideo</p>
+            </section>
+            <section>
+                <p>open Camera</p>
+            </section>
+            <section>
+                <p>Sound</p>
+                <p>open playingSounds</p>
+            </section>
+            <section>
+                <p>open audioInputExample</p>
+            </section>
+            <section>
+                <p>open fftSimple</p>
+            </section>
+            <section>
+                <p>3D</p>
+                <p>open 3Dcube</p>
+            </section>
+            <section>
+                <p>Open 3Dtexture</p>
+            </section>
+            <section>
+                <p>Open 3Dlight</p>
+            </section>
+            <section>
+                <p>Open 3Deasycam</p>
+            </section>
+            <section>
+                <p>Addons</p>
+                <ul>
+                    <li class="fragment">oF comes with some addons in the addons folder</li>
+                    <li class="fragment">there are additional addons at <a href="http://ofxaddons.com/categories">ofxaddons</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>OSC</p>
+                <a href="http://opensoundcontrol.org/">Open Sound Control</a></section>
+            <section>
+                <p>OSC</p>
+                <ul>
+                    <li class="fragment">Sends data as an array data structure</li>
+                    <li class="fragment">First element[0] of the array is the "address"</li>
+                    <li class="fragment">Additional elements are values</li>
+                    <li class="fragment">Send the data via the Univercal Datagram Protocol(UDP)</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Set your phone and laptop to wifi 'gaincubator'</h3>
+                <br>
+                <h3>Password 'grandstand'</h3>
+            </section>
+            <section>
+                <h3>Open your system preferences, the click the network icon</h3>
+                <img src="img/compip.png" height="500">
+            </section>
+            <section>
+                <img src="img/touchosc1.png" height="600">
+            </section>
+            <section>
+                <img src="img/touchosc2.png" height="600">
+            </section>
+            <section>
+                <h3>Choose the simple layout in TouchOSC app</h3>
+                <img src="img/basic.png" height="500">
+            </section>
+            <section>
+                <p>open osctester</p>
+            </section>
+            <section>
+                <p>open osctester2</p>
+            </section>
+            <section>
+                <p>Importing a shader(super easy way)</p>
+                <ul>
+                    <li class="fragment">download shadertoy addon <a href="https://github.com/tiagosr/ofxShadertoy">Shadertoy addon</a></li>
+                    <li class="fragment">remove -master from the end of the folder name apnd place in addons folder</a>
+                    </li>
+                    <li class="fragment">Open shadertoy1 with the project manager and make sure the shadertoy addon is added</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <p>Importing a Quadwaper</p>
+                <ul>
+                    <li class="fragment">download ofxQuadWarp addon <a href="https://github.com/julapy/ofxQuadWarp">ofxQuadWarp addon</a></li>
+                    <li class="fragment">remove -master from the end of the folder name apnd place in addons folder</a>
+                    </li>
+                    <li class="fragment">Open quad1 with the project manager and make sure the ofxQuadWarp and OpenCV addon is added</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <p>Combining the 2</p>
+                <ul>
+                    <li class="fragment">Open quadShader1</a>
+                    </li>
+                    <li class="fragment">remove -master from the end of the folder name apnd place in addons folder</a>
+                    </li>
+                    <li class="fragment">Open quad1 with the project manager and make sure the Shadertoy, ofxQuadWarp and OpenCV addon is added</a>
+                    </li>
+                </ul>
+            </section>
 
         </div>
-    </div>ß
+    </div>
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
     <script>
